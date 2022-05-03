@@ -9,6 +9,10 @@
 
 /* Diseño del encabezado y menú*/
 
+body{
+    overflow-x: hidden;
+}
+
 .titulo-principal {
     background-color: black;
     text-align: center;
@@ -90,7 +94,7 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     padding: 20px;
-
+    width: auto;
 }
 
 .contenido-index-items {

@@ -9,7 +9,7 @@
 
 /* Diseño del encabezado y menú*/
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -30,6 +30,17 @@ body{
     letter-spacing: 0.5rem;
     font-size: 50px;
 }
+header{
+    background-color: black;
+   
+}
+.titulo-principal:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    background-color: black;
+    
+}
+
 
 /* Diseño menú*/
 .contenedor-navegador {
@@ -38,6 +49,14 @@ body{
     justify-content: space-around;
     height: 3.5rem;
     padding-top: 2rem;
+}
+
+/** Animacion retraccion */
+
+.navegador-listas:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    text-decoration: underline 2px rgba(25, 25, 167, 0.589);
 }
 
 .navegador-listas {
@@ -102,12 +121,25 @@ body{
     padding: 1rem;
     letter-spacing: 1px;
     font-size: 15px;
+    width: auto;
+    height: auto;
     -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
 }
 
+.contenido-index-items:hover .imangen-menu {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.contenido-index-items {
+    overflow: hidden;
+}
+
 .imangen-menu {
+    width: 90%;
+    height: auto;
     -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
@@ -324,6 +356,7 @@ body{
 @media (max-width:450px) {
     body {
         width: auto;
+        overflow-x: hidden;
     }
 
     /* tituto principal */
@@ -367,7 +400,7 @@ body{
 
     /* Icono de carrito */
     .iconocarrito {
-        visibility: hidden;
+        display: none;
 
     }
 
@@ -483,7 +516,7 @@ body{
 
     /* logo del pie de pagina*/
     .logopie {
-        visibility: hidden;
+        display: none;
     }
 
     /* seccion volver arriba*/
@@ -568,7 +601,7 @@ body{
 
     /* Icono de carrito */
     .iconocarrito {
-        visibility: hidden;
+        display: none;
 
     }
 
@@ -635,7 +668,7 @@ body{
         padding: 1rem;
         width: auto;
         letter-spacing: 1px;
-        font-size: 15px;
+        font-size: 50px;
     }
 
     .imangen-menu {
@@ -683,7 +716,7 @@ body{
 
     /* logo del pie de pagina*/
     .logopie {
-        visibility: hidden;
+        display: none;
     }
 
     /* seccion volver arriba*/

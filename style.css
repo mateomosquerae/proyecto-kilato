@@ -49,25 +49,12 @@ header {
     letter-spacing: 0.3rem;
 }
 
-
-/*Icono Carrito de compras*/
-.iconocarrito {
-    width: 30px;
-    height: auto;
-    padding-top: 10px;
-}
-
 /* Banner principal index*/
 
 .foto-bannerprincipal {
     width: 100%;
     height: auto;
     background-color: white;
-}
-
-.indexbanner {
-    width: 100%;
-    height: auto;
 }
 
 /*      subtitulos     */
@@ -81,65 +68,35 @@ header {
 }
 
 /*Sección principal index*/
-.foto-index-contenedor {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+.columnas-index {
     gap: 10px;
     padding: 20px;
     width: auto;
 }
 
-.contenido-index-items {
-    text-align: center;
-    padding: 1rem;
-    letter-spacing: 1px;
-    font-size: 15px;
-    width: auto;
-    height: auto;
-    -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
-    box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
+.index-items {
+     padding: 2rem;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    text-align: left;
+    border: solid 1px gray;
+    padding-left: 6%;
+   
 }
 
-.contenido-index-items:hover .imangen-menu {
+.index-items:hover .img-fluid {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
 }
 
-.contenido-index-items {
-    overflow: hidden;
-}
-
-.imangen-menu {
-    width: 90%;
-    height: auto;
+.img-fluid {
+    display: flex;
+    align-items:center;
     -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
 
 }
-
-.menuman {
-    grid-column: 1 / 3;
-}
-
-.menuwoman {
-    grid-column: 3 / 6;
-}
-
-.menuyou {
-    grid-column: 1 / 3;
-}
-
-.menunew {
-    grid-column: 3 / 6;
-}
-
-.menuvisit {
-    grid-column: 1 / 6;
-}
-
 /* Sección principal pages con productos*/
 
 .foto-contenedor {
@@ -155,14 +112,6 @@ header {
     padding: 1rem;
     letter-spacing: 1px;
     font-size: 15px;
-    -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
-    box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
-}
-
-/* Sección principal pages con productos - configuración imagebes prodcuto*/
-
-.imangen-producto {
     -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
     box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
@@ -265,46 +214,15 @@ header {
     letter-spacing: 2rem;
 }
 
-/*  Layaout y config page speial deals */
-
-.contenedor-seccion {
-    grid-area: seccion;
-    background-color: white;
-    display: flex;
-    align-content: space-around;
-    padding-left: 3rem;
-    padding-top: 3rem;
-    padding-right: 3rem;
-
-}
-
-/** Configuración seccion izquierda**/
-.seccion1-specialdeals {
-    width: 100%;
-    height: auto;
-    height: 20rem;
-    justify-content: center;
-
-}
-
-/** Configuración seccion derecha **/
+/** Configuración texto de seccion special deals**/
 
 .seccion2-specialdeals {
-    width: 100%;
-    height: auto;
-    height: 20rem;
-    justify-content: center;
-    padding-bottom: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
     border-left: solid 1px #948a8a86;
-
-
+    padding-left: 2rem;
 }
 
 /** Configuraciónsubtitulo de seccion special deals**/
 .subtitulos-h3 {
-
     text-align: left;
     color: #7e7474;
     letter-spacing: 0.2rem;
@@ -312,7 +230,7 @@ header {
     text-align: center;
 }
 
-/** Configuración texto de seccion special deals**/
+/** Configuración texto de textos special deals**/
 
 .speciald {
     line-height: 1.5rem;
@@ -395,12 +313,6 @@ header {
         padding: 20px;
     }
 
-    /*imagen en pages de productos*/
-    .imangen-producto {
-        width: 100px;
-        height: auto;
-    }
-
     /* contenido de index*/
     .contenido-index-items {
         text-align: center;
@@ -410,7 +322,7 @@ header {
         font-size: 15px;
     }
 
-    .imangen-menu {
+    .img-fluid {
         width: 300px;
     }
 
@@ -473,24 +385,6 @@ header {
         background-color: white;
         padding: 0.5rem;
     }
-
-    /** Configuración seccion izquierda**/
-    .seccion1-specialdeals {
-        width: auto;
-        height: 100%;
-        height: 20rem;
-        justify-content: center;
-    }
-
-    /** Configuración seccion derecha **/
-
-    .seccion2-specialdeals {
-        width: auto;
-        height: 100%;
-        justify-content: center;
-        padding: 1.5rem;
-        border-left: none;
-    }
 }
 
 
@@ -508,6 +402,7 @@ header {
         padding: 2rem;
         overflow: hidden;
     }
+
     /* titulo secundario */
     .h2 {
         padding: 1rem;
@@ -559,12 +454,6 @@ header {
         padding: 20px;
     }
 
-    /*imagen en pages de productos*/
-    .imangen-producto {
-        width: 200px;
-        height: auto;
-    }
-
     /* contenido de index*/
     .contenido-index-items {
         text-align: center;
@@ -574,7 +463,7 @@ header {
         font-size: 50px;
     }
 
-    .imangen-menu {
+    .img-fluid {
         width: 300px;
     }
 
@@ -628,31 +517,4 @@ header {
         height: auto;
     }
 
-    /*  Layaout y config page speial deals */
-
-    .contenedor-seccion {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-color: white;
-        padding: 0.5rem;
-    }
-
-    /** Configuración seccion izquierda**/
-    .seccion1-specialdeals {
-        width: auto;
-        height: 100%;
-        height: 20rem;
-        justify-content: center;
-    }
-
-    /** Configuración seccion derecha **/
-
-    .seccion2-specialdeals {
-        width: auto;
-        height: 100%;
-        justify-content: center;
-        padding: 1.5rem;
-        border-left: none;
-    }
 }

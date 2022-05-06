@@ -13,12 +13,16 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    background-color: black;
+}
+
 .titulo-principal {
     background-color: black;
     text-align: center;
     width: auto;
-    height: 2rem;
-    padding: 1.5rem;
+    height: 5rem;
+    padding: 2rem;
 }
 
 /* titulo principal*/
@@ -27,54 +31,24 @@ body {
     text-decoration: none;
     color: white;
     height: 5rem;
-    letter-spacing: 0.5rem;
-    font-size: 50px;
+    letter-spacing: 1rem;
+    font-size: 2.5rem;
 }
-header{
-    background-color: black;
-   
-}
+
 .titulo-principal:hover {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     background-color: black;
-    
+
 }
 
-
-/* Diseño menú*/
-.contenedor-navegador {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    height: 3.5rem;
-    padding-top: 2rem;
+/* Navegador principal */
+.nav-item {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
 }
 
-/** Animacion retraccion */
-
-.navegador-listas:hover {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    text-decoration: underline 2px rgba(25, 25, 167, 0.589);
-}
-
-.navegador-listas {
-    list-style: none;
-    width: auto;
-    height: 30px;
-    text-align: center;
-    padding: 10px;
-}
-
-/*Texto de las listas nav encabezado*/
-
-.textolistas {
-    text-decoration: none;
-    color: white;
-    font-size: 35px;
-    letter-spacing: 0.5rem;
-}
 
 /*Icono Carrito de compras*/
 .iconocarrito {
@@ -369,41 +343,6 @@ header{
         overflow: hidden;
     }
 
-    /* Navegador principal  */
-
-    .contenedor-navegador {
-        background-color: black;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        height: 11rem;
-        padding-top: 1rem;
-    }
-
-    /* Items naegador */
-
-    .navegador-listas {
-        list-style: none;
-        width: auto;
-        height: 10px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    /* Confing texto de listas */
-    .textolistas {
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-        letter-spacing: 0.5rem;
-    }
-
-    /* Icono de carrito */
-    .iconocarrito {
-        display: none;
-
-    }
-
     /* titulo secundario */
     .h2 {
         padding: 1rem;
@@ -569,42 +508,6 @@ header{
         padding: 2rem;
         overflow: hidden;
     }
-
-    /* Navegador principal  */
-
-    .contenedor-navegador {
-        background-color: black;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        height: 11rem;
-        padding-top: 1rem;
-    }
-
-    /* Items naegador */
-
-    .navegador-listas {
-        list-style: none;
-        width: auto;
-        height: 10px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    /* Confing texto de listas */
-    .textolistas {
-        text-decoration: none;
-        color: white;
-        font-size: 2rem;
-        letter-spacing: 0.5rem;
-    }
-
-    /* Icono de carrito */
-    .iconocarrito {
-        display: none;
-
-    }
-
     /* titulo secundario */
     .h2 {
         padding: 1rem;

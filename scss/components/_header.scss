@@ -1,0 +1,45 @@
+/* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
+
+.titulo-principal {
+    background-color: black;
+    text-align: center;
+    width: auto;
+    height: 5rem;
+    padding: 1rem;
+
+    /* titutlo princilpal*/
+    .titulo1 {
+        text-decoration: none;
+        color: white;
+        height: 5rem;
+        letter-spacing: 1rem;
+        font-size: 3rem;
+
+        /* Ajustes navegador */
+
+        .nav-item {
+            padding-top: 1rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.3rem;
+        }
+    }
+}
+
+/* BANNER PRINCIPAL Y CONFIG */
+
+.foto-bannerprincipal {
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+
+    /* titulo secundario*/
+    .titulo2 {
+        padding-top: 10px;
+        text-align: center;
+        letter-spacing: 10px;
+        color: black;
+        font-size: 50px;
+
+    }
+}

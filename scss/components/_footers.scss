@@ -1,0 +1,66 @@
+.piedepagina-contenedor {
+    display: grid;
+    grid-template-areas: "navegador logo mapa mapa mapa";
+    padding: 20px;
+    background-color: black;
+    grid-area: footer;
+
+    .navegador-pie {
+        grid-area: navegador;
+        display: block;
+
+
+        .conector {
+            text-decoration: none;
+            text-align: left;
+            font-size: 20px;
+            letter-spacing: 0.5rem;
+            color: white;
+            text-decoration: underline 2px rgba(25, 25, 167, 0.589);
+        }
+    }
+}
+
+
+.navegador-piedepagina {
+    padding: 5px;
+    height: auto;
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    color: white;
+    text-decoration: underline 2px rgba(25, 25, 167, 0.589);
+}
+
+.logopie {
+    grid-area: logo;
+    width: 40%;
+}
+
+/* MAPA UBICACIÓN */
+
+.mapa-pie {
+    grid-area: mapa;
+    color: white;
+    letter-spacing: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline 2px rgba(25, 25, 167, 0.589);
+    padding-left: 20px;
+    border-left: solid #7e7474 1px;
+}
+
+
+/* VOLVER ARRIBA PIE DE PAGINA*/
+.volver-arriba {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(25, 25, 167, 0.959);
+
+
+    .textva {
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        letter-spacing: 2rem;
+    }
+}

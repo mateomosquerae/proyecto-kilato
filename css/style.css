@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
+.titulo-principal {
+  background-color: black;
+  text-align: center;
+  width: auto;
+  height: 5rem;
+  padding: 1rem;
+  /* titutlo princilpal*/
+}
+.titulo-principal .titulo1 {
+  text-decoration: none;
+  color: white;
+  height: 5rem;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  /* Ajustes navegador */
+}
+.titulo-principal .titulo1 .nav-item {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+/* BANNER PRINCIPAL Y CONFIG */
+.foto-bannerprincipal {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  /* titulo secundario*/
+}
+.foto-bannerprincipal .titulo2 {
+  padding-top: 10px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: black;
+  font-size: 50px;
+}
+
+/* SECTION PIRNCIPAL - INDEX */
+.index-items {
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  text-align: left;
+  width: auto;
+  border-radius: 10px;
+}
+.index-items .texto-items {
+  padding-top: 20px;
+  padding: 5px;
+  display: block;
+  text-align: left;
+  color: #7e7474;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.piedepagina-contenedor {
+  display: grid;
+  grid-template-areas: "navegador logo mapa mapa mapa";
+  padding: 20px;
+  background-color: black;
+  grid-area: footer;
+}
+.piedepagina-contenedor .navegador-pie {
+  grid-area: navegador;
+  display: block;
+}
+.piedepagina-contenedor .navegador-pie .conector {
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-decoration: underline 2px rgba(25, 25, 167, 0.589);
+}
+
+.navegador-piedepagina {
+  padding: 5px;
+  height: auto;
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-decoration: underline 2px rgba(25, 25, 167, 0.589);
+}
+
+.logopie {
+  grid-area: logo;
+  width: 40%;
+}
+
+/* MAPA UBICACIÓN */
+.mapa-pie {
+  grid-area: mapa;
+  color: white;
+  letter-spacing: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: underline 2px rgba(25, 25, 167, 0.589);
+  padding-left: 20px;
+  border-left: solid #7e7474 1px;
+}
+
+/* VOLVER ARRIBA PIE DE PAGINA*/
+.volver-arriba {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(25, 25, 167, 0.959);
+}
+.volver-arriba .textva {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

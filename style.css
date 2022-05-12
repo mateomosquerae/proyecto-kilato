@@ -5,6 +5,7 @@
     padding: 0;
     /*Estilo de letra descargada y linkiada*/
     font-family: 'Bebas Neue', cursive;
+
 }
 
 /* Diseño del encabezado y menú*/
@@ -17,7 +18,7 @@ header {
     background-color: black;
 }
 
-.container{
+.container {
     padding: 2%;
 }
 
@@ -32,7 +33,7 @@ header {
 
 /* titulo principal*/
 
-.h1 {
+.titulo1 {
     text-decoration: none;
     color: white;
     height: 5rem;
@@ -64,7 +65,7 @@ header {
 
 /*      subtitulos     */
 
-.h2 {
+.titulo2 {
     padding-top: 10px;
     text-align: center;
     letter-spacing: 10px;
@@ -78,7 +79,7 @@ header {
     letter-spacing: 0.5px;
     font-size: 1.5rem;
     text-align: left;
-   
+
     width: auto;
     border-radius: 10px;
 }

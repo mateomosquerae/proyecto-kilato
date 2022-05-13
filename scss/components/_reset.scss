@@ -1,0 +1,23 @@
+/* RESETEO INICIAL Y CONFIGURACION GENERAL DE LA PAGIBNA */
+
+* {
+    margin: 0;
+    padding: 0;
+    /*Estilo de letra descargada y linkiada*/
+    font-family: 'Bebas Neue', cursive;
+    font-display: swap;
+}
+
+body {
+    overflow-x: hidden;
+
+    header {
+        background-color: black;
+
+
+    }
+}
+
+.container {
+    padding: 2%;
+}

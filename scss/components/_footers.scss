@@ -1,3 +1,5 @@
+/* PIE DE PAGINA */
+
 .piedepagina-contenedor {
     display: grid;
     grid-template-areas: "navegador logo mapa mapa mapa";
@@ -21,6 +23,7 @@
     }
 }
 
+/* Nav pie de pagina */
 
 .navegador-piedepagina {
     padding: 5px;
@@ -30,7 +33,7 @@
     color: white;
     text-decoration: underline 2px rgba(25, 25, 167, 0.589);
 }
-
+/* logo pie de pagina */
 .logopie {
     grid-area: logo;
     width: 40%;

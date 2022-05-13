@@ -1,0 +1,125 @@
+/* CONFIGURACION RESPONSIVE MOBIL */
+
+@media (max-width: 450px) {
+    body {
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
+
+/* pie de pagina */
+.piedepagina-contenedor {
+    display: grid;
+    height: auto;
+    width: auto;
+    height: auto;
+    grid-template-areas: "navegador"
+        "mapa";
+}
+
+/* Navegador del pie de pagina contenedor*/
+.navegador-pie {
+    grid-area: navegador;
+    width: auto;
+    display: block;
+}
+
+/* mapa del pie de pagina*/
+.mapa-pie {
+    width: auto;
+    display: block;
+    grid-area: mapa;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 20px;
+    border-left: none;
+    border-top: solid #7e7474 1px;
+}
+
+/* logo del pie de pagina*/
+.logopie {
+    display: none;
+
+}
+
+/* seccion volver arriba*/
+.volver-arriba {
+    width: auto;
+    height: auto;
+}
+
+/*------------------------------------------------*/
+
+
+/*------------------------------------------------*/
+
+
+@media (min-width:451px) and (max-width:960px) {
+    body {
+        width: auto;
+        overflow-x: hidden;
+
+        .container {
+            padding: 1rem;
+
+        }
+    }
+}
+
+.img-fluid {
+    width: 300px;
+}
+
+/* pie de pagina */
+.piedepagina-contenedor {
+    display: grid;
+    height: auto;
+    width: auto;
+    height: auto;
+    grid-template-areas: "navegador"
+        "mapa";
+}
+
+/* Navegador del pie de pagina contenedor*/
+.navegador-pie {
+    grid-area: navegador;
+    width: auto;
+    display: block;
+
+}
+
+/* contenido de pie de pagina*/
+.navegador-piedepagina {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+/* mapa del pie de pagina*/
+.mapa-pie {
+    width: auto;
+    display: block;
+    grid-area: mapa;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 20px;
+    border-left: none;
+    border-top: solid #7e7474 1px;
+}
+
+/* logo del pie de pagina*/
+.logopie {
+    display: none;
+}
+
+/* seccion volver arriba*/
+.volver-arriba {
+    width: auto;
+    height: auto;
+}

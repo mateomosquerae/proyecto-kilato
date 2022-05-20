@@ -1,4 +1,9 @@
+@import '../base/mapa';
+@import '../base/extend';
+
+
 /* SECTION PIRNCIPAL - INDEX */
+
 
 .index-items {
     letter-spacing: 0.5px;
@@ -12,9 +17,9 @@
         padding: 5px;
         display: block;
         text-align: left;
-        color: #7e7474;
-        letter-spacing: 0.2rem;
+        color: map-get($textogeneral, color);
+        letter-spacing: map-get($textogeneral, letter-spacing);
         text-decoration: none;
-        text-align: center;
+        @extend %center;
     }
 }

@@ -1,15 +1,24 @@
 @charset "UTF-8";
+/* MAPAS */
+/* EXTEND */
+/* % = placeholder */
+.volver-arriba, .index-items .texto-items, .foto-bannerprincipal .titulo2, .titulo-principal {
+  text-align: center;
+}
+
+.piedepagina-contenedor .navegador-pie .conector, .titulo-principal .titulo1 {
+  text-decoration: none;
+}
+
 /* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
 .titulo-principal {
   background-color: black;
-  text-align: center;
   width: auto;
   height: 5rem;
   padding: 1rem;
   /* titutlo princilpal*/
 }
 .titulo-principal .titulo1 {
-  text-decoration: none;
   color: white;
   height: 5rem;
   letter-spacing: 1rem;
@@ -32,10 +41,20 @@
 }
 .foto-bannerprincipal .titulo2 {
   padding-top: 10px;
-  text-align: center;
   letter-spacing: 10px;
   color: black;
   font-size: 50px;
+}
+
+/* MAPAS */
+/* EXTEND */
+/* % = placeholder */
+.volver-arriba, .index-items .texto-items, .titulo-principal, .foto-bannerprincipal .titulo2 {
+  text-align: center;
+}
+
+.piedepagina-contenedor .navegador-pie .conector, .titulo-principal .titulo1 {
+  text-decoration: none;
 }
 
 /* SECTION PIRNCIPAL - INDEX */
@@ -52,12 +71,23 @@
   display: block;
   text-align: left;
   color: #7e7474;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
   text-decoration: none;
+}
+
+/* MAPAS */
+/* EXTEND */
+/* % = placeholder */
+.volver-arriba, .titulo-principal, .foto-bannerprincipal .titulo2, .index-items .texto-items {
   text-align: center;
 }
 
-/* PIE DE PAGINA */
+.piedepagina-contenedor .navegador-pie .conector, .titulo-principal .titulo1 {
+  text-decoration: none;
+}
+
+/* Mixins */
+/* PIE DE PAGINA GENERAÑ */
 .piedepagina-contenedor {
   display: grid;
   grid-template-areas: "navegador logo mapa mapa mapa";
@@ -70,7 +100,6 @@
   display: block;
 }
 .piedepagina-contenedor .navegador-pie .conector {
-  text-decoration: none;
   text-align: left;
   font-size: 20px;
   letter-spacing: 0.5rem;
@@ -78,7 +107,6 @@
   text-decoration: underline 2px rgba(25, 25, 167, 0.589);
 }
 
-/* Nav pie de pagina */
 .navegador-piedepagina {
   padding: 5px;
   height: auto;
@@ -88,7 +116,6 @@
   text-decoration: underline 2px rgba(25, 25, 167, 0.589);
 }
 
-/* logo pie de pagina */
 .logopie {
   grid-area: logo;
   width: 40%;
@@ -109,7 +136,6 @@
 /* VOLVER ARRIBA PIE DE PAGINA*/
 .volver-arriba {
   width: 100%;
-  text-align: center;
   background-color: rgba(25, 25, 167, 0.959);
 }
 .volver-arriba .textva {
@@ -163,46 +189,46 @@ body header {
   .container {
     padding: 1rem;
   }
-}
-/* pie de pagina */
-.piedepagina-contenedor {
-  display: grid;
-  height: auto;
-  width: auto;
-  height: auto;
-  grid-template-areas: "navegador" "mapa";
-}
 
-/* Navegador del pie de pagina contenedor*/
-.navegador-pie {
-  grid-area: navegador;
-  width: auto;
-  display: block;
-}
+  /* pie de pagina */
+  .piedepagina-contenedor {
+    display: grid;
+    height: auto;
+    width: auto;
+    height: auto;
+    grid-template-areas: "navegador" "mapa";
+  }
 
-/* mapa del pie de pagina*/
-.mapa-pie {
-  width: auto;
-  display: block;
-  grid-area: mapa;
-  color: white;
-  padding-top: 2rem;
-  padding-left: 20px;
-  border-left: none;
-  border-top: solid #7e7474 1px;
-}
+  /* Navegador del pie de pagina contenedor*/
+  .navegador-pie {
+    grid-area: navegador;
+    width: auto;
+    display: block;
+  }
 
-/* logo del pie de pagina*/
-.logopie {
-  display: none;
-}
+  /* mapa del pie de pagina*/
+  .mapa-pie {
+    width: auto;
+    display: block;
+    grid-area: mapa;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 20px;
+    border-left: none;
+    border-top: solid #7e7474 1px;
+  }
 
-/* seccion volver arriba*/
-.volver-arriba {
-  width: auto;
-  height: auto;
-}
+  /* logo del pie de pagina*/
+  .logopie {
+    display: none;
+  }
 
+  /* seccion volver arriba*/
+  .volver-arriba {
+    width: auto;
+    height: auto;
+  }
+}
 /*------------------------------------------------*/
 /*------------------------------------------------*/
 @media (min-width: 451px) and (max-width: 960px) {
@@ -210,62 +236,63 @@ body header {
     width: auto;
     overflow-x: hidden;
   }
-  body .container {
+
+  .container {
     padding: 1rem;
   }
-}
-.img-fluid {
-  width: 300px;
-}
 
-/* pie de pagina */
-.piedepagina-contenedor {
-  display: grid;
-  height: auto;
-  width: auto;
-  height: auto;
-  grid-template-areas: "navegador" "mapa";
-}
+  .img-fluid {
+    width: 300px;
+  }
 
-/* Navegador del pie de pagina contenedor*/
-.navegador-pie {
-  grid-area: navegador;
-  width: auto;
-  display: block;
-}
+  /* pie de pagina */
+  .piedepagina-contenedor {
+    display: grid;
+    height: auto;
+    width: auto;
+    height: auto;
+    grid-template-areas: "navegador" "mapa";
+  }
 
-/* contenido de pie de pagina*/
-.navegador-piedepagina {
-  width: auto;
-  height: auto;
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
-  color: white;
-}
+  /* Navegador del pie de pagina contenedor*/
+  .navegador-pie {
+    grid-area: navegador;
+    width: auto;
+    display: block;
+  }
 
-/* mapa del pie de pagina*/
-.mapa-pie {
-  width: auto;
-  display: block;
-  grid-area: mapa;
-  color: white;
-  padding-top: 2rem;
-  padding-left: 20px;
-  border-left: none;
-  border-top: solid #7e7474 1px;
-}
+  /* contenido de pie de pagina*/
+  .navegador-piedepagina {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: white;
+  }
 
-/* logo del pie de pagina*/
-.logopie {
-  display: none;
-}
+  /* mapa del pie de pagina*/
+  .mapa-pie {
+    width: auto;
+    display: block;
+    grid-area: mapa;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 20px;
+    border-left: none;
+    border-top: solid #7e7474 1px;
+  }
 
-/* seccion volver arriba*/
-.volver-arriba {
-  width: auto;
-  height: auto;
-}
+  /* logo del pie de pagina*/
+  .logopie {
+    display: block;
+  }
 
+  /* seccion volver arriba*/
+  .volver-arriba {
+    width: auto;
+    height: auto;
+  }
+}
 /* CONFIGURACION DE IMAGENES PAGES */
 /* Efecto de imagenes */
 .img-fluid {
@@ -278,6 +305,18 @@ body header {
 .logo-pie {
   width: 200px;
   height: auto;
+}
+
+/* MAPAS */
+/* Mixins */
+/* EXTEND */
+/* % = placeholder */
+.titulo-principal, .foto-bannerprincipal .titulo2, .index-items .texto-items, .volver-arriba {
+  text-align: center;
+}
+
+.titulo-principal .titulo1, .piedepagina-contenedor .navegador-pie .conector {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

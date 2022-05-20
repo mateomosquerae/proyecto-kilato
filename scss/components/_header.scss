@@ -1,16 +1,19 @@
+@import '../base/mapa';
+@import '../base/extend';
+
 /* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
 
 .titulo-principal {
-    background-color: black;
-    text-align: center;
+    background-color: map-get($tituloprincipal, background-color);
+    @extend %center;
     width: auto;
     height: 5rem;
     padding: 1rem;
 
     /* titutlo princilpal*/
     .titulo1 {
-        text-decoration: none;
-        color: white;
+        @extend %none;
+        color: map-get($tituloprincipal, color);
         height: 5rem;
         letter-spacing: 1rem;
         font-size: 3rem;
@@ -38,7 +41,7 @@
     /* titulo secundario*/
     .titulo2 {
         padding-top: 10px;
-        text-align: center;
+        @extend %center;
         letter-spacing: 10px;
         color: black;
         font-size: 50px;

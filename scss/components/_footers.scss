@@ -1,7 +1,11 @@
-/* PIE DE PAGINA */
+@import '../base/mapa';
+@import '../base/extend';
+@import '../base/mixin';
+
+/* PIE DE PAGINA GENERAÑ */
 
 .piedepagina-contenedor {
-    display: grid;
+    @include flex(grid);
     grid-template-areas: "navegador logo mapa mapa mapa";
     padding: 20px;
     background-color: black;
@@ -9,11 +13,11 @@
 
     .navegador-pie {
         grid-area: navegador;
-        display: block;
+        @include flex(block);
 
 
         .conector {
-            text-decoration: none;
+            @extend %none;
             text-align: left;
             font-size: 20px;
             letter-spacing: 0.5rem;
@@ -23,7 +27,6 @@
     }
 }
 
-/* Nav pie de pagina */
 
 .navegador-piedepagina {
     padding: 5px;
@@ -33,7 +36,7 @@
     color: white;
     text-decoration: underline 2px rgba(25, 25, 167, 0.589);
 }
-/* logo pie de pagina */
+
 .logopie {
     grid-area: logo;
     width: 40%;
@@ -44,8 +47,8 @@
 .mapa-pie {
     grid-area: mapa;
     color: white;
-    letter-spacing: 0.5rem;
-    display: flex;
+    letter-spacing: map-get($textogeneral, letter-spacing);
+    @include flex(flex);
     justify-content: space-around;
     text-decoration: underline 2px rgba(25, 25, 167, 0.589);
     padding-left: 20px;
@@ -56,7 +59,7 @@
 /* VOLVER ARRIBA PIE DE PAGINA*/
 .volver-arriba {
     width: 100%;
-    text-align: center;
+    @extend %center;
     background-color: rgba(25, 25, 167, 0.959);
 
 

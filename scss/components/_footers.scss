@@ -10,12 +10,9 @@
     padding: 20px;
     background-color: black;
     grid-area: footer;
-
     .navegador-pie {
         grid-area: navegador;
         @include flex(block);
-
-
         .conector {
             @extend %none;
             text-align: left;

@@ -165,6 +165,10 @@ body header {
   padding: 2%;
 }
 
+.disclaimer {
+  display: none;
+}
+
 /* HOVER PAGES */
 /* hover titulo principal*/
 .titulo-principal:hover {

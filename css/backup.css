@@ -8,6 +8,10 @@
 
 }
 
+.disclaimer {
+    display: none;
+}
+
 /* Diseño del encabezado y menú*/
 
 body {

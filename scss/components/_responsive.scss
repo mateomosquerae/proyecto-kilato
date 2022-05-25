@@ -1,4 +1,3 @@
-
 /* CONFIGURACION RESPONSIVE MOBIL */
 
 @media (max-width: 450px) {
@@ -11,6 +10,24 @@
         padding: 1rem;
     }
 
+    /* titutlo principal */
+    .titulo-principal {
+        background-color: black;
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding-top: 2rem;
+        font-size: 0.5rem;
+
+        .titulo1 {
+            color: white;
+            height: auto;
+            letter-spacing: 0.5rem;
+            font-size: 2rem;
+            padding-top: 5rem;
+        }
+
+    }
 
     /* pie de pagina */
     .piedepagina-contenedor {
@@ -29,6 +46,15 @@
         display: block;
     }
 
+    /*Contendor de imagenes producto*/
+    .foto-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        padding: 20px;
+    }
+
     /* mapa del pie de pagina*/
     .mapa-pie {
         width: auto;
@@ -43,7 +69,7 @@
 
     /* logo del pie de pagina*/
     .logopie {
-      display: none;
+        display: none;
     }
 
     /* seccion volver arriba*/
@@ -59,7 +85,7 @@
 /*------------------------------------------------*/
 
 
-@media (min-width:451px) and (max-width:960px) {
+@media (min-width:451px) and (max-width:1200px) {
     body {
         width: auto;
         overflow-x: hidden;
@@ -116,7 +142,7 @@
 
     /* logo del pie de pagina*/
     .logopie {
-        display: block;
+        display: none;
     }
 
     /* seccion volver arriba*/

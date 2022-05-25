@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.piedepagina-contenedor .navegador-pie .conector, .titulo-principal .titulo1 {
+.titulo-principal .titulo1 {
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@
   text-align: center;
 }
 
-.piedepagina-contenedor .navegador-pie .conector, .titulo-principal .titulo1 {
+.titulo-principal .titulo1 {
   text-decoration: none;
 }
 
@@ -75,6 +75,41 @@
   text-decoration: none;
 }
 
+/*******  SECTIONS PRODUCTOS *******/
+/*******  SECTIONS PRODUCTOS *******/
+/* grid 3x3 para producto */
+.foto-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 1rem;
+}
+
+.contenido-items {
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  letter-spacing: 1px;
+  font-size: 15px;
+  -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
+}
+
+/* Sección principal pages con productos - texto de cada prodcuto*/
+.texto-items {
+  padding-top: 20px;
+  display: block;
+  text-align: left;
+  color: #7e7474;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* MAPAS */
 /* EXTEND */
 /* % = placeholder */
@@ -82,7 +117,7 @@
   text-align: center;
 }
 
-.piedepagina-contenedor .navegador-pie .conector, .titulo-principal .titulo1 {
+.titulo-principal .titulo1 {
   text-decoration: none;
 }
 
@@ -99,17 +134,18 @@
   grid-area: navegador;
   display: block;
 }
-.piedepagina-contenedor .navegador-pie .conector {
-  text-align: left;
+
+.navegador-piedepagina {
+  padding: 5px;
+  height: auto;
   font-size: 20px;
   letter-spacing: 0.5rem;
   color: white;
   text-decoration: underline 2px rgba(25, 25, 167, 0.589);
 }
-
-.navegador-piedepagina {
-  padding: 5px;
-  height: auto;
+.navegador-piedepagina .conector {
+  text-decoration: none;
+  text-align: left;
   font-size: 20px;
   letter-spacing: 0.5rem;
   color: white;
@@ -194,6 +230,23 @@ body header {
     padding: 1rem;
   }
 
+  /* titutlo principal */
+  .titulo-principal {
+    background-color: black;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    font-size: 0.5rem;
+  }
+  .titulo-principal .titulo1 {
+    color: white;
+    height: auto;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    padding-top: 5rem;
+  }
+
   /* pie de pagina */
   .piedepagina-contenedor {
     display: grid;
@@ -208,6 +261,15 @@ body header {
     grid-area: navegador;
     width: auto;
     display: block;
+  }
+
+  /*Contendor de imagenes producto*/
+  .foto-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 20px;
   }
 
   /* mapa del pie de pagina*/
@@ -235,7 +297,7 @@ body header {
 }
 /*------------------------------------------------*/
 /*------------------------------------------------*/
-@media (min-width: 451px) and (max-width: 960px) {
+@media (min-width: 451px) and (max-width: 1200px) {
   body {
     width: auto;
     overflow-x: hidden;
@@ -288,7 +350,7 @@ body header {
 
   /* logo del pie de pagina*/
   .logopie {
-    display: block;
+    display: none;
   }
 
   /* seccion volver arriba*/
@@ -319,7 +381,7 @@ body header {
   text-align: center;
 }
 
-.titulo-principal .titulo1, .piedepagina-contenedor .navegador-pie .conector {
+.titulo-principal .titulo1 {
   text-decoration: none;
 }
 

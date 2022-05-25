@@ -2,12 +2,21 @@
 /* MAPAS */
 /* EXTEND */
 /* % = placeholder */
-.volver-arriba, .index-items .texto-items, .foto-bannerprincipal .titulo2, .titulo-principal {
+.volver-arriba, .index-items .texto-items, .foto-bannerprincipal .titulo2, .titulo-principal, .preheader {
   text-align: center;
 }
 
 .titulo-principal .titulo1 {
   text-decoration: none;
+}
+
+/* PREHEADER */
+.preheader {
+  width: 100%;
+  background-color: rgba(25, 25, 167, 0.959);
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
 }
 
 /* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
@@ -49,7 +58,7 @@
 /* MAPAS */
 /* EXTEND */
 /* % = placeholder */
-.volver-arriba, .index-items .texto-items, .titulo-principal, .foto-bannerprincipal .titulo2 {
+.volver-arriba, .index-items .texto-items, .preheader, .titulo-principal, .foto-bannerprincipal .titulo2 {
   text-align: center;
 }
 
@@ -89,13 +98,18 @@
 .contenido-items {
   text-align: center;
   width: auto;
-  height: auto;
+  height: 500px;
   padding: 1rem;
   letter-spacing: 1px;
   font-size: 15px;
   -webkit-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
   box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.51);
+}
+
+.img-thumbnail {
+  height: 70%;
+  width: auto;
 }
 
 /* Sección principal pages con productos - texto de cada prodcuto*/
@@ -107,13 +121,12 @@
   letter-spacing: 0.2rem;
   text-decoration: none;
   text-align: center;
-  padding: 1rem;
 }
 
 /* MAPAS */
 /* EXTEND */
 /* % = placeholder */
-.volver-arriba, .titulo-principal, .foto-bannerprincipal .titulo2, .index-items .texto-items {
+.volver-arriba, .preheader, .titulo-principal, .foto-bannerprincipal .titulo2, .index-items .texto-items {
   text-align: center;
 }
 
@@ -154,7 +167,7 @@
 
 .logopie {
   grid-area: logo;
-  width: 40%;
+  width: 60%;
 }
 
 /* MAPA UBICACIÓN */
@@ -377,7 +390,7 @@ body header {
 /* Mixins */
 /* EXTEND */
 /* % = placeholder */
-.titulo-principal, .foto-bannerprincipal .titulo2, .index-items .texto-items, .volver-arriba {
+.preheader, .titulo-principal, .foto-bannerprincipal .titulo2, .index-items .texto-items, .volver-arriba {
   text-align: center;
 }
 

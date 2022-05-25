@@ -1,8 +1,19 @@
 @import '../base/mapa';
 @import '../base/extend';
 
-/* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
 
+/* PREHEADER */
+.preheader {
+    width: 100%;
+    @extend %center;
+    background-color: rgba(25, 25, 167, 0.959);
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+   
+}
+
+/* HEADERS-NAV Y TITULOS INDEX Y PAGES*/
 .titulo-principal {
     background-color: map-get($tituloprincipal, background-color);
     @extend %center;

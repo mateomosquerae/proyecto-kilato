@@ -3,9 +3,8 @@
 /* hover titulo principal*/
 
 .titulo-principal:hover {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-    background-color: black;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* hover imagenes*/
@@ -13,4 +12,12 @@
 .index-items:hover .img-fluid {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
+}
+
+
+.preheader:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    background-color: rgba(25, 25, 167, 0.959);
+    padding-top: 0.5rem;
 }

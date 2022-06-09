@@ -55,8 +55,8 @@
     width: auto;
 }
 
-/* Sección principal pages con productos - texto de cada prodcuto*/
 
+/* TEXTO GENERAL DE LAS PAGES */
 .texto-items {
     padding-top: 20px;
     display: block;
@@ -65,5 +65,41 @@
     letter-spacing: 0.2rem;
     text-decoration: none;
     text-align: center;
-   
+
 }
+
+/* Sección principal pages con productos - texto de cada prodcuto*/
+.texto-banner {
+    padding-top: 20px;
+    display: block;
+    text-align: left;
+    color: #7e7474;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+
+}
+
+/* TEXTO SECCIONES TEXTO AMPLIO  */
+.texto-largo {
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    text-align: center;
+    color: #7e7474;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.carousel-inner {
+    height: 30rem;
+    border-radius: 20px;
+    align-content: center;
+    background-color: black;
+    box-shadow: 2px 3px 17px black;
+
+}
+
+

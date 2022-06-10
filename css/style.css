@@ -143,23 +143,32 @@
 }
 
 /* TEXTO SECCIONES TEXTO AMPLIO  */
-.texto-largo {
-  padding: 1rem;
-  padding-top: 2rem;
-  display: flex;
-  text-align: center;
-  color: #7e7474;
-  letter-spacing: 0.2rem;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
 .carousel-inner {
   height: 30rem;
-  border-radius: 20px;
+  border-radius: 10px;
   align-content: center;
-  background-color: black;
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/07/09/02/wood-2045379_960_720.jpg);
   box-shadow: 2px 3px 17px black;
+}
+
+/* TEXTO CARRUCEL */
+.texto-carrucel {
+  padding: 0.5rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* TEXTO NEW COLLECTION */
+.texto-new {
+  text-decoration: none;
+  text-align: left;
+  color: #7e7474;
+  letter-spacing: 0.2rem;
+  font-family: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 /* MAPAS */
